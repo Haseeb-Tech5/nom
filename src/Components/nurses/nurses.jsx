@@ -155,14 +155,14 @@ export default function Nurses() {
                   <h2>Testimonials</h2>
                 </div>
                 <div
-                  className="testi-img"
+                  className="testi-img1"
                   data-aos="zoom-in"
                   data-aos-duration="800"
                 >
                   <img src={Img} alt="" />
                 </div>
                 <div
-                  className="testi-para"
+                  className="testi-para1"
                   data-aos="zoom-in"
                   data-aos-duration="800"
                 >
@@ -181,7 +181,7 @@ export default function Nurses() {
                       <div className="h5-heading">
                         <p>Locum dental nurse</p>
                       </div>
-                      <div className="p-para">
+                      <div className="p-para1">
                         <p>
                           The platform has given me access to a wide range of
                           opportunities, and the process of securing positions
@@ -197,7 +197,7 @@ export default function Nurses() {
                       <div className="h5-heading">
                         <p>Locum dental nurse</p>
                       </div>
-                      <div className="p-para">
+                      <div className="p-para1">
                         <p>
                           The platform has given me access to a wide range of
                           opportunities, and the process of securing positions
@@ -213,7 +213,7 @@ export default function Nurses() {
                       <div className="h5-heading">
                         <p>Locum dental nurse</p>
                       </div>
-                      <div className="p-para">
+                      <div className="p-para1">
                         <p>
                           The platform has given me access to a wide range of
                           opportunities, and the process of securing positions

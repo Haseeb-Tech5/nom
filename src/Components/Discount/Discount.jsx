@@ -54,8 +54,8 @@ const Discount = () => {
             </div>
             <div className="nurse-heading">
               <h2>
-                Why <span style={{ color: "#497367" }}>Nurses</span> should join
-                us!
+                Why <span style={{ color: "#497367" }}>Practices</span> should
+                join us!
               </h2>
             </div>
             <div className="nurse-para2">

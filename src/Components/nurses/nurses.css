@@ -11,7 +11,27 @@
   position: relative;
   margin-top: 45px;
 }
-
+.testi-img1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+.testi-img1 img {
+  object-fit: contain;
+  width: 220px;
+  margin-top: -4%;
+  margin-bottom: 8px;
+}
+.testi-para1 p {
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+}
 .testimonial-container4 {
   background-color: #f5f3ef;
   display: flex;
@@ -264,6 +284,25 @@
   height: 300px;
   margin: -150px; /* Half of the width and height to center the bubble */
   opacity: 0;
+}
+.p-para1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  margin-top: -10px;
+}
+.p-para1 p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 @media only screen and (max-width: 1200px) {
   .nurses-icons {
