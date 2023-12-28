@@ -90,7 +90,7 @@ export default function Nurses() {
       {isLoading ? (
         <div className="loading-overlay">
           <BounceLoader
-            color="rgba(174, 156, 127, 1)"
+            color="rgba(174, 156, 127, 0.607)"
             loading={isLoading}
             size={100}
           />
@@ -145,133 +145,11 @@ export default function Nurses() {
                 ))}
               </div>
             </div>
-            <div className="testimonial-container4">
-              <div className="testi-full-container">
-                <div
-                  className="testi-heading3"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                >
-                  <h2>Testimonials</h2>
-                </div>
-                <div
-                  className="testi-img1"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                >
-                  <img src={Img} alt="" />
-                </div>
-                <div
-                  className="testi-para1"
-                  data-aos="zoom-in"
-                  data-aos-duration="800"
-                >
-                  <p>Hear how others have found the Nomad Nurse experience</p>
-                </div>
-                <div
-                  className="slider-container"
-                  // data-aos="zoom-in"
-                  // data-aos-duration="800"
-                >
-                  <Slider ref={(c) => setSlider(c)} {...settings}>
-                    <div className="slider-item">
-                      <div className="h3-heading">
-                        <h3>Yasmine</h3>
-                      </div>
-                      <div className="h5-heading">
-                        <p>Locum dental nurse</p>
-                      </div>
-                      <div className="p-para1">
-                        <p>
-                          The platform has given me access to a wide range of
-                          opportunities, and the process of securing positions
-                          is seamless. I appreciate the consistent support and
-                          the chance to work with various dental practices
-                        </p>
-                      </div>
-                    </div>{" "}
-                    <div className="slider-item">
-                      <div className="h3-heading">
-                        <h3>Yasmine</h3>
-                      </div>
-                      <div className="h5-heading">
-                        <p>Locum dental nurse</p>
-                      </div>
-                      <div className="p-para1">
-                        <p>
-                          The platform has given me access to a wide range of
-                          opportunities, and the process of securing positions
-                          is seamless. I appreciate the consistent support and
-                          the chance to work with various dental practices
-                        </p>
-                      </div>
-                    </div>{" "}
-                    <div className="slider-item">
-                      <div className="h3-heading">
-                        <h3>Yasmine</h3>
-                      </div>
-                      <div className="h5-heading">
-                        <p>Locum dental nurse</p>
-                      </div>
-                      <div className="p-para1">
-                        <p>
-                          The platform has given me access to a wide range of
-                          opportunities, and the process of securing positions
-                          is seamless. I appreciate the consistent support and
-                          the chance to work with various dental practices
-                        </p>
-                      </div>
-                    </div>{" "}
-                  </Slider>
-                  <div className="custom-arrows">
-                    <div
-                      className={`custom-arrow custom-prev ${
-                        activeArrow === "prev" ? "active" : ""
-                      }`}
-                      onClick={handlePrev}
-                    >
-                      {">"}
-                    </div>
-                    <div
-                      className={`custom-arrow custom-next ${
-                        activeArrow === "next" ? "active" : ""
-                      }`}
-                      onClick={handleNext}
-                    >
-                      {"<"}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="line-contained">
-            <img src={Line} alt="" />
-          </div> */}
-            {/* <Testimonials /> */}
-            <div
-              className="register-container"
-              data-aos="zoom-in"
-              data-aos-duration="800"
-            >
-              <div className="whole-contained3">
-                <div className="images-contained">
-                  {images.map((image, index) => (
-                    <img
-                      key={index}
-                      src={image.src}
-                      alt=""
-                      className={image.className}
-                    />
-                  ))}
-                </div>
-                <div className="header1">
-                  <h2>Register and be the first to find out when we launch!</h2>
-                </div>
-                <div className="button-contained">
-                  <button>Register Now</button>
-                </div>
-              </div>
-            </div>
+             
+           <div className="nurse-testominal">
+           < Testimonials/>
+           </div>
+         <Register/>
             {/* <Register /> */}
             <Touch />
           </div>

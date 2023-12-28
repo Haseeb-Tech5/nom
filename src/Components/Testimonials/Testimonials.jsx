@@ -144,9 +144,7 @@ const Testimonials = () => {
           // backgroundColor: "red",
         }}
       >
-        <div className="line-contained">
-          <img src={Line} alt="" />
-        </div>
+      
       </div>
     </>
   );

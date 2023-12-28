@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar/Navbar";
+import Touch from "./Touch/Touch";
+import Vector3 from "../Assetss/Vector (3).png"
+
 
 export default function Cookies() {
   return (
     <>
       <div className="terms-main">
+        <Navbar/>
         <div className="terms-head">
           <p>Cookie Policy</p>
+          <img src={Vector3} alt="" />
+
         </div>
         <div className="terms-para">
           <p>
@@ -87,6 +94,8 @@ export default function Cookies() {
           </p>
         </div>
       </div>
+      <br />
+      <Touch/>
     </>
   );
 }

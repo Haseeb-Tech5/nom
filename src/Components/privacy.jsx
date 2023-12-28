@@ -1,8 +1,17 @@
 import "../Components/privacy.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Navbar from "../Components/Navbar/Navbar"
+import Touch from "../Components/Touch/Touch"
+import Vector3 from "../Assetss/Vector (3).png";
+import { animateScroll as scroll, Events, scrollSpy } from "react-scroll";
+
 
 export default function Privacy() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   const [data, setData] = useState([
     {
       purpose:
@@ -70,9 +79,13 @@ export default function Privacy() {
   ]);
   return (
     <>
+    
       <div className="terms-main">
+        <Navbar/>
         <div className="terms-head">
+        
           <p>Privacy Policy</p>
+          <img src={Vector3} alt="" />
           <p>Introduction</p>
         </div>
         <div className="terms-para">
@@ -426,9 +439,9 @@ export default function Privacy() {
             to alert you when websites set or access cookies. If you disable or
             refuse cookies, please note that some parts of this website may
             become inaccessible or not function properly. For more information
-            about the cookies we use,
+            about the cookies we use  please,
             <strong>
-              <Link> please see </Link>
+              <Link to="/cookies" onClick={scrollToTop}> click the link </Link>
             </strong>
           </p>
           <br />
@@ -726,7 +739,9 @@ export default function Privacy() {
             you if this is the case at the time you withdraw your consent.
           </p>
         </div>
+        <Touch/>
       </div>
+     
     </>
   );
 }

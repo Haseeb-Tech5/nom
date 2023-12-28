@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import "../Components/privacy.css";
+import Navbar from "./Navbar/Navbar";
+import Touch from "./Touch/Touch";
+import Vector3 from "../Assetss/Vector (3).png"
 
 export default function Terms() {
   return (
     <>
       <div className="terms-main">
+        <Navbar/>
         <div className="terms-head">
           <p>Terms of Use</p>
+          <img src={Vector3} alt="" />
           <p>
             PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS
             SITE
@@ -354,7 +359,9 @@ export default function Terms() {
             of the courts of England and Wales. 
           </p>
         </div>
+        <Touch/>
       </div>
+      
     </>
   );
 }

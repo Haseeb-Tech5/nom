@@ -13,6 +13,7 @@ import Img2 from "../../Assetss/group2.png";
 import Img3 from "../../Assetss/Group 4.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { animateScroll as scroll, Events, scrollSpy } from "react-scroll";
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 
@@ -20,6 +21,9 @@ const Touch = () => {
   useEffect(() => {
     AOS.init({ duration: 800, easing: "ease-out" });
   }, []);
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <div className="touch-container">
       <div className="touch-container-full">
@@ -153,9 +157,9 @@ const Touch = () => {
               </div>
               <div className="form-container">
                 <div className="cccc">
-                  <div className="form-checkbox">
-                    <input type="checkbox" id="consentCheckbox" />
-                  </div>
+                <div className="form-checkbox">
+      <input type="checkbox" id="consentCheckbox" className="custom-checkbox" />
+    </div>
                   <div className="para-form1">
                     <p>
                       I consent to my personal data being stored and used in
@@ -177,13 +181,13 @@ const Touch = () => {
 
         <div className="whole-container-sb">
           <div className="whole-container-left">
-            <Link to="/cookies" style={{ textDecoration: "none" }}>
+            <Link to="/cookies" onClick={scrollToTop}  style={{ textDecoration: "none" }}>
               <div className="whole-items">Cookie Policy</div>
             </Link>
-            <Link to="/privacy" style={{ textDecoration: "none" }}>
+            <Link to="/privacy"  onClick={scrollToTop} style={{ textDecoration: "none" }}>
               <div className="whole-items">Privacy policy</div>
             </Link>
-            <Link to="/terms&conditions" style={{ textDecoration: "none" }}>
+            <Link to="/terms&conditions" onClick={scrollToTop} style={{ textDecoration: "none" }}>
               <div className="whole-items">Terms & conditions</div>
             </Link>
           </div>

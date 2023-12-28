@@ -46,7 +46,7 @@ const Contact = () => {
       {isLoading ? (
         <div className="loading-overlay">
           <BounceLoader
-            color="rgba(174, 156, 127, 1)"
+            color="rgba(174, 156, 127, 0.607)"
             loading={isLoading}
             size={100}
           />

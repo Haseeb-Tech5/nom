@@ -9,12 +9,13 @@ const Navbar = () => {
     fontFamily: "'Poppins', sans-serif",
     width: "100%",
     backgroundColor: "white",
+    
   };
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-white" style={navbarStyle}>
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-white" style={navbarStyle} >
+        <div className="container-fluid" style={{position:"fixed",top:"0", backgroundColor:"white"}}>
           <a className="navbar-brand" href="/">
             <div className="sss">
               <div className="d-flex flex-column align-items-center">
@@ -57,7 +58,7 @@ const Navbar = () => {
                   <a
                     className="nav-link"
                     href="javascript:void(0)"
-                    style={{ fontWeight: "500", color: "#222222" }}
+                    style={{ fontWeight: "500", color: "#222222", fontSize:"15px" }}
                   >
                     About us
                   </a>
@@ -65,11 +66,11 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/nurse" style={{ textDecoration: "none" }}>
+                <Link to="/nurse" style={{ textDecoration: "none", fontSize:"17px"  }}>
                   <a
                     className="nav-link"
                     href="javascript:void(0)"
-                    style={{ fontWeight: "500", color: "#222222" }}
+                    style={{ fontWeight: "500", color: "#222222",fontSize:"17px"  }}
                   >
                     Nurses
                   </a>
@@ -81,7 +82,7 @@ const Navbar = () => {
                   <a
                     className="nav-link"
                     href="javascript:void(0)"
-                    style={{ fontWeight: "500", color: "#222222" }}
+                    style={{ fontWeight: "500", color: "#222222",fontSize:"17px"  }}
                   >
                     Practices
                   </a>
@@ -91,7 +92,7 @@ const Navbar = () => {
                 <a
                   className="nav-link"
                   href="javascript:void(0)"
-                  style={{ fontWeight: "500", color: "#222222" }}
+                  style={{ fontWeight: "500", color: "#222222",fontSize:"17px" }}
                 >
                   FAQ's
                 </a>
